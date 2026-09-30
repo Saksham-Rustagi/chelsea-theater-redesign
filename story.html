@@ -4,87 +4,107 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Our Story | The Chelsea Theater (redesign mockup)</title>
+<meta name="description" content="Student redesign mockup of the Chelsea Theater website, Chapel Hill's nonprofit arthouse cinema.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
-<div class="mock-note">Student redesign mockup for ENGL 303 (UNC). Not the official Chelsea Theater website. Buttons are not functional.</div>
+<div class="mock-note">Student redesign mockup for ENGL 303 at UNC-Chapel Hill. Not the official Chelsea Theater website, and buttons are for display only.</div>
 <header>
   <div class="wrap">
-    <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater home"></a>
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
     <nav aria-label="Main">
       <a href="index.html#showtimes">Films</a>
       <a href="index.html#visit">Visit</a>
       <a href="support.html">Support</a>
       <a href="story.html" aria-current="page">About</a>
-      <a class="btn btn-primary" href="support.html">Become a member</a>
+      <a class="btn btn-primary" href="support.html#join">Become a member</a>
     </nav>
   </div>
 </header>
 <main id="main">
 
 <section>
-  <div class="wrap hero">
+  <div class="wrap split">
     <div>
       <div class="eyebrow">Our story</div>
       <h1>A community cinema, built by Chapel Hill</h1>
-      <p>The Chelsea presents films that entertain, inspire, and engage, and it brings our community together around them.</p>
+      <p class="lead">The Chelsea presents films that entertain, inspire, and engage, and it brings our community together around them.</p>
     </div>
-    <img src="images/theater.jpg" alt="The Chelsea Theater building in Timberlyne Village">
+    <img class="photo" src="images/theater.jpg" alt="The Chelsea Theater building in Timberlyne Village">
   </div>
 </section>
-<section style="padding-top:0">
-  <div class="wrap grid g2">
+
+<section class="tight">
+  <div class="wrap split" style="align-items:start">
     <div>
+      <h2>Who we are</h2>
       <p>The Chelsea is Orange County&rsquo;s only nonprofit arthouse theater. For more than thirty years it has shown the independent, international, and classic films you won&rsquo;t find at the multiplex.</p>
-      <p>Since becoming a community-supported nonprofit in 2018, the Chelsea has added repertory series, guest speakers, and partnerships with UNC and local groups, including Chelsea Classics, the Jewish Film Festival, and Movies Under the Stars.</p>
+      <p>As a community-supported nonprofit, the Chelsea has added repertory series, guest speakers, and partnerships with UNC and local groups, and it offers open-caption screenings every week.</p>
     </div>
-    <div class="timeline">
-      <div><strong>1990s</strong><br>The Chelsea opens in Timberlyne Village.</div>
-      <div><strong>2018</strong><br>Becomes a community-supported nonprofit.</div>
-      <div><strong>2021</strong><br>Full renovation: new screens, sound, seating, and air filtration.</div>
-      <div><strong>2026</strong><br>Jamie Webb becomes Executive Director.</div>
-    </div>
+    <ol class="timeline">
+      <li><strong>Over 30 years ago</strong>The Chelsea opens in Timberlyne Village.</li>
+      <li><strong>2018</strong>Becomes a community-supported nonprofit.</li>
+      <li><strong>2021</strong>Full renovation: new screens, sound, seating, and air filtration.</li>
+      <li><strong>2026</strong>Jamie Webb becomes Executive Director.</li>
+    </ol>
   </div>
 </section>
-<section class="band stats">
+
+<section class="dark stats">
   <div class="wrap grid g3">
     <div><strong>500+</strong>films a year</div>
     <div><strong>50,000+</strong>visitors a year</div>
     <div><strong>3</strong>screens, renovated in 2021</div>
   </div>
 </section>
+
 <section>
   <div class="wrap">
-    <h2>Meet the team</h2>
-    <div class="grid g4" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))"><div class="card team"><div class="avatar" aria-hidden="true">JW</div><h3>Jamie Webb</h3><div class="muted">Executive Director</div></div><div class="card team"><div class="avatar" aria-hidden="true">MB</div><h3>Matt Brown</h3><div class="muted">Film Programmer</div></div><div class="card team"><div class="avatar" aria-hidden="true">AB</div><h3>Archer Boyette</h3><div class="muted">Operations Manager</div></div><div class="card team"><div class="avatar" aria-hidden="true">SN</div><h3>Sheela Namakkal</h3><div class="muted">Donor Relations &amp; Events</div></div><div class="card team"><div class="avatar" aria-hidden="true">MS</div><h3>Mimi Stockton</h3><div class="muted">Digital Marketing Manager</div></div></div>
-    <p class="muted" style="margin-top:12px">Plus our theater attendant crew, who keep the popcorn popping. Staff photos to be added.</p>
-    <h2 style="margin-top:40px">Board of directors</h2>
-    <div class="board">
-      <p style="margin:0">Alexander Roth, Chair<br>Sarah Nicholson, Vice Chair<br>Gary Boehm, Treasurer<br>Abby Zarkin, Secretary<br>Nicole Eure<br>Jake Finklestein</p>
-      <p style="margin:0">Madison Garcia<br>Linda Luftig<br>Andrea Richards<br>David Rousso<br>Lisa Ruckdeschel<br>Anna Thorp</p>
+    <h2>More than movies</h2>
+    <div class="grid g3" style="margin-top:20px">
+      <div class="program"><img src="images/classics.jpg" alt="2026 Chelsea Classics graphic"><h3>Chelsea Classics</h3><p class="muted">Restored favorites back on the big screen all year.</p></div>
+      <div class="program"><img src="images/muts.jpg" alt="Movies Under the Stars graphic"><h3>Movies Under the Stars</h3><p class="muted">Free outdoor screenings for the whole community.</p></div>
+      <div class="program"><img src="images/globalscreen.jpg" alt="Global Big Screen film series graphic"><h3>Global Big Screen</h3><p class="muted">A film series with UNC&rsquo;s Curriculum in Global Studies.</p></div>
     </div>
   </div>
 </section>
-<section class="band">
+
+<section class="tight">
   <div class="wrap">
-    <h2>Be part of the next chapter</h2>
-    <p>Join the members who keep the Chelsea independent, or bring your group for a private screening.</p>
-    <a class="btn btn-primary" href="support.html">Become a member</a> <a class="btn btn-light" href="#">Rent a theater</a>
+    <h2>Meet the team</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:20px"><div class="card team"><div class="avatar" aria-hidden="true">JW</div><h3>Jamie Webb</h3><div class="muted">Executive Director</div></div><div class="card team"><div class="avatar" aria-hidden="true">MB</div><h3>Matt Brown</h3><div class="muted">Film Programmer</div></div><div class="card team"><div class="avatar" aria-hidden="true">AB</div><h3>Archer Boyette</h3><div class="muted">Operations Manager</div></div><div class="card team"><div class="avatar" aria-hidden="true">SN</div><h3>Sheela Namakkal</h3><div class="muted">Donor Relations &amp; Events</div></div><div class="card team"><div class="avatar" aria-hidden="true">MS</div><h3>Mimi Stockton</h3><div class="muted">Digital Marketing Manager</div></div></div>
+    <p class="muted" style="margin-top:14px">Plus our theater attendant crew, who keep the popcorn popping.</p>
+    <h2 style="margin-top:48px">Board of directors</h2>
+    <div class="board"><span>Alexander Roth, Chair</span><span>Sarah Nicholson, Vice Chair</span><span>Gary Boehm, Treasurer</span><span>Abby Zarkin, Secretary</span><span>Nicole Eure</span><span>Jake Finklestein</span><span>Madison Garcia</span><span>Linda Luftig</span><span>Andrea Richards</span><span>David Rousso</span><span>Lisa Ruckdeschel</span><span>Anna Thorp</span></div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <div>
+      <h2>Be part of the next chapter</h2>
+      <p class="lead muted">Join the members who keep the Chelsea independent, or bring your group for a private screening.</p>
+    </div>
+    <div class="actions" style="justify-content:flex-end"><a class="btn btn-primary" href="support.html#join">Become a member</a><a class="btn btn-light" href="#">Rent a theater</a></div>
   </div>
 </section>
 
 </main>
 <footer id="visit">
   <div class="wrap grid g4">
-    <div><h4>Films</h4><a href="index.html#showtimes">Showtimes &amp; tickets</a><a href="#">Coming soon</a><a href="#">Special programs</a></div>
-    <div><h4>Visit</h4><p style="margin:0">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p><a href="tel:+19199298428">Call 919-929-8428</a><a href="#">Get directions</a><p style="margin:.4em 0 0">Tue&ndash;Sun: opens 30 min before the first show<br>Mon: closed unless advertised</p></div>
-    <div><h4>Support</h4><a href="support.html">Become a member</a><a href="support.html#give">Make a gift</a><a href="#">Gift cards</a></div>
-    <div><h4>Stay in the loop</h4><label for="email">Get our weekly film newsletter</label><input id="email" type="email" placeholder="Your email"><a class="btn btn-primary" href="#" style="display:inline-block;color:#1C1917">Sign up</a></div>
+    <div>
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
+      <p style="margin:0">Orange County&rsquo;s nonprofit arthouse cinema.</p>
+    </div>
+    <div><h4>Visit</h4><p style="margin:0 0 6px">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p><a href="tel:+19199298428">Call 919-929-8428</a><a href="#">Get directions</a><p style="margin:8px 0 0">Tue&ndash;Sun: opens 30 min before the first show<br>Mon: closed unless advertised</p></div>
+    <div><h4>Explore</h4><a href="index.html#showtimes">Showtimes &amp; tickets</a><a href="index.html#events">Special programs</a><a href="support.html#join">Membership</a><a href="support.html#give">Donate</a><a href="#">Gift cards</a></div>
+    <div><h4>Stay in the loop</h4><label for="email">Get our weekly film newsletter.</label><input id="email" type="email" placeholder="Your email address" autocomplete="email"><a class="btn btn-primary" href="#">Sign up</a></div>
   </div>
-  <div class="wrap fine">The Chelsea Art Theater, Inc. is a 501(c)(3) nonprofit. &middot; <a href="story.html" style="display:inline">About</a> &middot; <a href="#" style="display:inline">Rentals</a> &middot; <a href="#" style="display:inline">Press</a> &middot; <a href="#" style="display:inline">Accessibility</a></div>
+  <div class="wrap fine">&copy; 2026 The Chelsea Art Theater, Inc., a 501(c)(3) nonprofit. <a href="story.html">About</a> <a href="#">Rentals</a> <a href="#">Press</a> <a href="#">Accessibility</a> <a href="#">Instagram</a> <a href="#">Facebook</a></div>
 </footer>
 </body>
 </html>
