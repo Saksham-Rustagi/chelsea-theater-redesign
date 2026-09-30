@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | The Chelsea Theater (redesign mockup)</title>
+<title>Films | The Chelsea Theater (redesign mockup)</title>
 <meta name="description" content="Student redesign mockup of the Chelsea Theater website, Chapel Hill's nonprofit arthouse cinema.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -16,144 +16,129 @@
 <header>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
-    <nav aria-label="Main">
-      <a href="index.html#showtimes" aria-current="page">Films</a>
-      <a href="index.html#visit">Visit</a>
-      <a href="support.html">Support</a>
-      <a href="story.html">About</a>
-    </nav>
-    <a class="btn btn-primary header-cta" href="support.html#join">Become a member</a>
+    <nav aria-label="Main"><a href="index.html" aria-current="page">Films</a><a href="visit.html">Visit</a><a href="support.html">Support</a><a href="story.html">About</a></nav>
   </div>
+  <div class="marquee" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 </header>
 <main id="main">
 
-<section class="dark hero">
-  <div class="wrap split">
-    <img class="photo" src="images/hachan-wide.jpg" alt="Rinko Kikuchi in Ha-Chan, Shake Your Booty!">
-    <div>
-      <div class="eyebrow">Now showing</div>
-      <h1>Ha-Chan, Shake Your Booty!</h1>
-      <div class="meta">R &middot; 122 min &middot; Comedy/Drama &middot; Rinko Kikuchi</div>
-      <p class="lead">Haru and Luis love competing in Tokyo&rsquo;s ballroom dance scene. After tragedy strikes, friends coax Haru back to the studio, and sparks fly.</p>
-      <div class="actions"><a class="btn btn-primary" href="#showtimes">Get tickets</a><a class="btn btn-light" href="#">Watch trailer</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="identity">
-  <div class="wrap"><p><mark>Orange County&rsquo;s only nonprofit arthouse cinema.</mark> Independent, international, and classic film on three screens in Chapel Hill for more than thirty years.</p></div>
-</section>
-
-<section style="padding-top:32px">
-  <div class="wrap grid g3">
-    <a class="card path" href="#showtimes"><h3>Showtimes &amp; tickets</h3><p>See what&rsquo;s playing today and book your seats.</p><span class="go">See showtimes &rarr;</span></a>
-    <a class="card path" href="support.html#join"><h3>Become a member</h3><p>Discounted tickets, free popcorn, and a cinema that stays independent.</p><span class="go">Compare memberships &rarr;</span></a>
-    <a class="card path" href="#visit"><h3>Plan your visit</h3><p>Hours, free parking, open captions, and assistive listening.</p><span class="go">Visitor info &rarr;</span></a>
-  </div>
-</section>
-
-<section id="showtimes" class="tight">
+<section class="feature on-dark">
   <div class="wrap">
-    <div class="section-head">
-      <h2>Today at the Chelsea</h2>
-      <div class="days"><span class="on">Today</span><span>Tomorrow</span><span>Pick a date</span></div>
+    <img src="images/hachan-wide.jpg" alt="Rinko Kikuchi in Ha-Chan, Shake Your Booty!">
+    <div>
+      <span class="tag">Now showing</span>
+      <h1>Ha-Chan, Shake Your Booty!</h1>
+      <div class="facts">R &middot; 122 min &middot; Dir. Josef Kubota Wladyka</div>
+      <p>Haru and Luis love competing in Tokyo&rsquo;s ballroom dance scene. After tragedy strikes, friends coax Haru back to the studio, and sparks fly.</p>
+      <div class="actions"><a class="btn btn-primary" href="#showtimes">Showtimes</a><a class="btn btn-plain" href="#">Trailer</a></div>
     </div>
-    <div class="card films">
-      
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <p class="statement">The Chelsea is Orange County&rsquo;s only nonprofit arthouse cinema: three screens in Timberlyne Village showing independent, international, and classic films you won&rsquo;t find at the multiplex.</p>
+    <ul class="shortcuts">
+      <li><a href="#showtimes">Today&rsquo;s showtimes <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="visit.html">Hours, parking &amp; access <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="support.html">Become a member <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="showtimes" style="padding-top:0">
+  <div class="wrap">
+    <div class="head-row">
+      <h2>Today at the Chelsea</h2>
+      <div class="days"><span class="on">Today</span><span>Tomorrow</span><span>This week</span></div>
+    </div>
+    
     <article class="film">
       <img src="images/hachan.jpg" alt="Poster for Ha-Chan, Shake Your Booty!">
-      <div>
-        <h3>Ha-Chan, Shake Your Booty!</h3>
-        <div class="info">R &middot; 122 min &middot; Comedy/Drama</div>
-        <p>A grieving dancer returns to Tokyo&rsquo;s ballroom floor.</p>
-        <div class="times"><a class="time" href="#">1:00 PM</a><a class="time" href="#">5:00 PM</a><a class="time" href="#">7:00 PM</a></div>
-        <div><span class="badge">Open captions at 1:00 PM</span><span class="badge">Closed captions</span><span class="badge">Audio description</span></div>
-      </div>
+      <div><h3>Ha-Chan, Shake Your Booty!</h3><div class="facts">R &middot; 122 min &middot; Comedy/Drama</div><p>A grieving dancer returns to Tokyo&rsquo;s ballroom floor.</p></div>
+      <div class="times"><a class="time" href="#">1:00<small>Open captions</small></a><a class="time" href="#">5:00</a><a class="time" href="#">7:00</a></div>
     </article>
-      
+    
     <article class="film">
       <img src="images/primetime.jpg" alt="Poster for Primetime">
-      <div>
-        <h3>Primetime</h3>
-        <div class="info">R &middot; 110 min &middot; Drama</div>
-        <p>Robert Pattinson stars as <em>To Catch a Predator</em> host Chris Hansen in 2006.</p>
-        <div class="times"><a class="time" href="#">1:30 PM</a><a class="time" href="#">4:30 PM</a><a class="time" href="#">7:30 PM</a></div>
-        <div><span class="badge">Closed captions</span><span class="badge">Audio description</span></div>
-      </div>
+      <div><h3>Primetime</h3><div class="facts">R &middot; 110 min &middot; Drama</div><p>Robert Pattinson plays <em>To Catch a Predator</em> host Chris Hansen in 2006.</p></div>
+      <div class="times"><a class="time" href="#">1:30</a><a class="time" href="#">4:30</a><a class="time" href="#">7:30</a></div>
     </article>
-      
+    
     <article class="film">
       <img src="images/yhtbt.jpg" alt="Poster for You Had to Be There">
-      <div>
-        <h3>You Had to Be There</h3>
-        <div class="info">Not rated &middot; 98 min &middot; Documentary</div>
-        <p>How a 1972 Toronto <em>Godspell</em> launched Martin Short, Gilda Radner, and Eugene Levy.</p>
-        <div class="times"><a class="time" href="#">2:00 PM</a><a class="time" href="#">8:00 PM</a></div>
-        <div><span class="badge">Open captions at 2:00 PM</span><span class="badge">Closed captions</span><span class="badge">Audio description</span></div>
-      </div>
+      <div><h3>You Had to Be There</h3><div class="facts">Not rated &middot; 98 min &middot; Documentary</div><p>How a 1972 Toronto <em>Godspell</em> launched Martin Short, Gilda Radner, and Eugene Levy.</p></div>
+      <div class="times"><a class="time" href="#">2:00<small>Open captions</small></a><a class="time" href="#">8:00</a></div>
     </article>
-      
+    
     <article class="film">
       <img src="images/weight.jpg" alt="Poster for The Weight">
-      <div>
-        <h3>The Weight</h3>
-        <div class="info">R &middot; 115 min &middot; Adventure/Crime</div>
-        <p>Ethan Hawke and Russell Crowe in a dangerous gold-smuggling escape.</p>
-        <div class="times"><a class="time" href="#">4:00 PM</a></div>
-        <div><span class="badge">Closed captions</span><span class="badge">Audio description</span></div>
-      </div>
+      <div><h3>The Weight</h3><div class="facts">R &middot; 115 min &middot; Adventure/Crime</div><p>Ethan Hawke and Russell Crowe in a dangerous gold-smuggling escape.</p></div>
+      <div class="times"><a class="time" href="#">4:00</a></div>
     </article>
-    </div>
-    <details>
-      <summary>What do the accessibility options mean?</summary>
-      <ul>
-        <li><strong>Open captions:</strong> captions and sound descriptions appear on screen for everyone.</li>
-        <li><strong>Closed captions:</strong> a personal caption device is available free at concessions.</li>
-        <li><strong>Audio description:</strong> headsets narrate on-screen action for blind and low-vision guests.</li>
-      </ul>
-    </details>
-    <p style="margin-top:14px"><a class="more" href="#">See the full week &rarr;</a></p>
+    <p class="key"><strong>Captions and audio:</strong> &ldquo;Open captions&rdquo; means captions appear on screen for everyone. Closed-caption devices and audio-description headsets are available for most shows; ask at the concession stand. <a href="visit.html#access">More on accessibility</a></p>
   </div>
 </section>
 
-<section id="events" class="tight">
+<section style="padding-top:0">
   <div class="wrap">
-    <div class="section-head"><h2>Happening now</h2><a class="more" href="#">All special programs &rarr;</a></div>
-    <div class="grid g3">
-      
-      <article class="card event"><img src="images/jff.jpg" alt="Jewish Film Festival 2026 banner"><div class="body"><div class="date">October</div><h3>Jewish Film Festival 2026</h3><p class="muted">Six award-winning, first-run films from around the world.</p><a class="more" href="#">See the lineup &rarr;</a></div></article>
-      
-      <article class="card event"><img src="images/devils.jpg" alt="The Devils: Director's Cut"><div class="body"><div class="date">Opens Thursday, October 15</div><h3>The Devils: Director&rsquo;s Cut</h3><p class="muted">Ken Russell&rsquo;s restored 1971 classic with Vanessa Redgrave and Oliver Reed.</p><a class="more" href="#">Get tickets &rarr;</a></div></article>
-      
-      <article class="card event"><img src="images/pjparty.jpg" alt="PJ Party poster for The Craft and The Crow"><div class="body"><div class="date">Saturday, October 31, 9:30 PM</div><h3>Halloween PJ Party</h3><p class="muted"><em>The Craft</em> + <em>The Crow</em> double feature. Pajamas encouraged.</p><a class="more" href="#">Get tickets &rarr;</a></div></article>
-    </div>
+    <div class="head-row"><h2>Coming up</h2><a href="#">All special programs</a></div>
+    
+    <article class="event">
+      <div class="date">Oct 11<span>Festival opens</span></div>
+      <div><h3>Jewish Film Festival 2026</h3><p>Six award-winning, first-run films from around the world. Some screenings are already sold out.</p><a href="#">See the lineup</a></div>
+      <img src="images/jff.jpg" alt="Jewish Film Festival 2026 banner">
+    </article>
+    
+    <article class="event">
+      <div class="date">Oct 15<span>Thu &ndash; one week</span></div>
+      <div><h3>The Devils: Director&rsquo;s Cut</h3><p>Ken Russell&rsquo;s 1971 film with Vanessa Redgrave and Oliver Reed, restored. Rated NC-17.</p><a href="#">Showtimes</a></div>
+      <img src="images/devils.jpg" alt="The Devils: Director's Cut">
+    </article>
+    
+    <article class="event">
+      <div class="date">Oct 31<span>Sat, 9:30 PM</span></div>
+      <div><h3>Halloween PJ Party</h3><p><em>The Craft</em> + <em>The Crow</em>, with an intermission. Pajamas encouraged.</p><a href="#">Showtimes</a></div>
+      <img src="images/pjparty.jpg" alt="PJ Party poster for The Craft and The Crow">
+    </article>
   </div>
 </section>
 
-<section class="dark">
-  <div class="wrap split">
+<section class="band">
+  <div class="wrap">
     <div>
-      <div class="eyebrow">Support the Chelsea</div>
-      <h2>Keep independent film on Chapel Hill screens</h2>
-      <p class="lead muted">Ticket sales cover only part of what it takes to run the Chelsea. Members help bring more than 500 films a year to our screens, from new releases to Chelsea Classics.</p>
-      <div class="actions"><a class="btn btn-primary" href="support.html#join">Become a member</a><a class="btn btn-light" href="support.html#give">Make a gift</a></div>
+      <h2>Tickets pay for part of it. Members pay for the rest.</h2>
+      <p>Memberships start at $50 a year and come with cheaper tickets and free popcorn.</p>
     </div>
-    <img class="photo" src="images/classics.jpg" alt="2026 Chelsea Classics series graphic">
+    <div class="actions"><a class="btn btn-primary" href="support.html">See memberships</a></div>
   </div>
 </section>
 
 </main>
-<footer id="visit">
-  <div class="wrap grid g4">
+<footer>
+  <div class="wrap">
     <div>
       <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
       <p style="margin:0">Orange County&rsquo;s nonprofit arthouse cinema.</p>
     </div>
-    <div><h4>Visit</h4><p style="margin:0 0 6px">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p><a href="tel:+19199298428">Call 919-929-8428</a><a href="#">Get directions</a><p style="margin:8px 0 0">Tue&ndash;Sun: opens 30 min before the first show<br>Mon: closed unless advertised</p></div>
-    <div><h4>Explore</h4><a href="index.html#showtimes">Showtimes &amp; tickets</a><a href="index.html#events">Special programs</a><a href="support.html#join">Membership</a><a href="support.html#give">Donate</a><a href="#">Gift cards</a></div>
-    <div><h4>Stay in the loop</h4><label for="email">Get our weekly film newsletter.</label><input id="email" type="email" placeholder="Your email address" autocomplete="email"><a class="btn btn-primary" href="#">Sign up</a></div>
+    <div>
+      <h4>Visit</h4>
+      <p style="margin:0 0 6px">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p>
+      <a href="tel:+19199298428">(919) 929-8428</a>
+      <a href="mailto:info@thechelseatheater.org">info@thechelseatheater.org</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p style="margin:0">Tue&ndash;Sun: doors open 30 minutes before the first show<br>Mon: closed unless advertised</p>
+    </div>
+    <div>
+      <h4>The weekly program</h4>
+      <label for="email">Showtimes and special events in your inbox every week.</label>
+      <input id="email" type="email" placeholder="Email address" autocomplete="email">
+      <a class="btn btn-primary" href="#">Sign up</a>
+    </div>
   </div>
-  <div class="wrap fine">&copy; 2026 The Chelsea Art Theater, Inc., a 501(c)(3) nonprofit. <a href="story.html">About</a> <a href="#">Rentals</a> <a href="#">Press</a> <a href="#">Accessibility</a> <a href="#">Instagram</a> <a href="#">Facebook</a></div>
+  <div class="wrap fine">&copy; 2026 The Chelsea Art Theater, Inc., a 501(c)(3) nonprofit. <a href="#">Rentals</a><a href="#">Press</a><a href="#">Jobs</a><a href="#">Gift cards</a><a href="#">Instagram</a><a href="#">Facebook</a></div>
 </footer>
 </body>
 </html>

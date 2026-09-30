@@ -7,8 +7,8 @@
 <meta name="description" content="Student redesign mockup of the Chelsea Theater website, Chapel Hill's nonprofit arthouse cinema.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -16,95 +16,96 @@
 <header>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
-    <nav aria-label="Main">
-      <a href="index.html#showtimes">Films</a>
-      <a href="index.html#visit">Visit</a>
-      <a href="support.html">Support</a>
-      <a href="story.html" aria-current="page">About</a>
-    </nav>
-    <a class="btn btn-primary header-cta" href="support.html#join">Become a member</a>
+    <nav aria-label="Main"><a href="index.html">Films</a><a href="visit.html">Visit</a><a href="support.html">Support</a><a href="story.html" aria-current="page">About</a></nav>
   </div>
+  <div class="marquee" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 </header>
 <main id="main">
 
-<section>
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">Our story</div>
-      <h1>A community cinema, built by Chapel Hill</h1>
-      <p class="lead">The Chelsea presents films that entertain, inspire, and engage, and it brings our community together around them.</p>
-    </div>
-    <img class="photo" src="images/theater.jpg" alt="The Chelsea Theater building in Timberlyne Village">
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap split" style="align-items:start">
-    <div>
-      <h2>Who we are</h2>
-      <p>The Chelsea is Orange County&rsquo;s only nonprofit arthouse theater. For more than thirty years it has shown the independent, international, and classic films you won&rsquo;t find at the multiplex.</p>
-      <p>As a community-supported nonprofit, the Chelsea has added repertory series, guest speakers, and partnerships with UNC and local groups, and it offers open-caption screenings every week.</p>
-    </div>
-    <ol class="timeline">
-      <li><strong>Over 30 years ago</strong>The Chelsea opens in Timberlyne Village.</li>
-      <li><strong>2018</strong>Becomes a community-supported nonprofit.</li>
-      <li><strong>2021</strong>Full renovation: new screens, sound, seating, and air filtration.</li>
-      <li><strong>2026</strong>Jamie Webb becomes Executive Director.</li>
-    </ol>
-  </div>
-</section>
-
-<section class="dark stats">
-  <div class="wrap grid g3">
-    <div><strong>500+</strong>films a year</div>
-    <div><strong>50,000+</strong>visitors a year</div>
-    <div><strong>3</strong>screens, renovated in 2021</div>
-  </div>
-</section>
-
-<section>
+<section class="opener">
   <div class="wrap">
-    <h2>More than movies</h2>
-    <div class="grid g3" style="margin-top:20px">
-      <div class="program"><img src="images/classics.jpg" alt="2026 Chelsea Classics graphic"><h3>Chelsea Classics</h3><p class="muted">Restored favorites back on the big screen all year.</p></div>
-      <div class="program"><img src="images/muts.jpg" alt="Movies Under the Stars graphic"><h3>Movies Under the Stars</h3><p class="muted">Free outdoor screenings for the whole community.</p></div>
-      <div class="program"><img src="images/globalscreen.jpg" alt="Global Big Screen film series graphic"><h3>Global Big Screen</h3><p class="muted">A film series with UNC&rsquo;s Curriculum in Global Studies.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <h2>Meet the team</h2>
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:20px"><div class="card team"><div class="avatar" aria-hidden="true">JW</div><h3>Jamie Webb</h3><div class="muted">Executive Director</div></div><div class="card team"><div class="avatar" aria-hidden="true">MB</div><h3>Matt Brown</h3><div class="muted">Film Programmer</div></div><div class="card team"><div class="avatar" aria-hidden="true">AB</div><h3>Archer Boyette</h3><div class="muted">Operations Manager</div></div><div class="card team"><div class="avatar" aria-hidden="true">SN</div><h3>Sheela Namakkal</h3><div class="muted">Donor Relations &amp; Events</div></div><div class="card team"><div class="avatar" aria-hidden="true">MS</div><h3>Mimi Stockton</h3><div class="muted">Digital Marketing Manager</div></div></div>
-    <p class="muted" style="margin-top:14px">Plus our theater attendant crew, who keep the popcorn popping.</p>
-    <h2 style="margin-top:48px">Board of directors</h2>
-    <div class="board"><span>Alexander Roth, Chair</span><span>Sarah Nicholson, Vice Chair</span><span>Gary Boehm, Treasurer</span><span>Abby Zarkin, Secretary</span><span>Nicole Eure</span><span>Jake Finklestein</span><span>Madison Garcia</span><span>Linda Luftig</span><span>Andrea Richards</span><span>David Rousso</span><span>Lisa Ruckdeschel</span><span>Anna Thorp</span></div>
-  </div>
-</section>
-
-<section class="dark">
-  <div class="wrap split">
     <div>
-      <h2>Be part of the next chapter</h2>
-      <p class="lead muted">Join the members who keep the Chelsea independent, or bring your group for a private screening.</p>
+      <h1>Our story</h1>
+      <p class="lede">For more than thirty years, the Chelsea has shown the films that don&rsquo;t play anywhere else in town, and brought Chapel Hill together to watch them.</p>
     </div>
-    <div class="actions" style="justify-content:flex-end"><a class="btn btn-primary" href="support.html#join">Become a member</a><a class="btn btn-light" href="#">Rent a theater</a></div>
+    <img src="images/theater.jpg" alt="The Chelsea Theater building in Timberlyne Village">
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap two">
+    <div>
+      <div class="head-row"><h2>Who we are</h2></div>
+      <p style="margin-top:16px">The Chelsea is Orange County&rsquo;s only nonprofit arthouse theater. Its mission is to present films that entertain, inspire, and engage.</p>
+      <p>Today it shows more than 500 films a year to more than 50,000 visitors, with repertory series, guest speakers, open-caption screenings, and partnerships with UNC and local groups.</p>
+    </div>
+    <dl class="years">
+      <div><dt>30+ years ago</dt><dd>The Chelsea opens in Timberlyne Village.</dd></div>
+      <div><dt>2018</dt><dd>Becomes a community-supported nonprofit.</dd></div>
+      <div><dt>2021</dt><dd>Full renovation: new screens, sound, seating, and air filtration.</dd></div>
+      <div><dt>2026</dt><dd>Jamie Webb becomes Executive Director.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head-row"><h2>More than new releases</h2></div>
+    <div class="programs">
+      <div><img src="images/classics.jpg" alt="Chelsea Classics 2026 graphic"><h3>Chelsea Classics</h3><p>Restored favorites back on the big screen.</p></div>
+      <div><img src="images/muts.jpg" alt="Movies Under the Stars graphic"><h3>Movies Under the Stars</h3><p>Free outdoor screenings for the whole community.</p></div>
+      <div><img src="images/globalscreen.jpg" alt="Global Big Screen series graphic"><h3>Global Big Screen</h3><p>A film series with UNC&rsquo;s Curriculum in Global Studies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap two">
+    <div>
+      <div class="head-row"><h2>Staff</h2></div>
+      <div class="people" style="grid-template-columns:1fr;border-top:0"><div><b>Jamie Webb</b><span class="muted">Executive Director</span></div><div><b>Matt Brown</b><span class="muted">Film Programmer</span></div><div><b>Archer Boyette</b><span class="muted">Operations Manager</span></div><div><b>Sheela Namakkal</b><span class="muted">Donor Relations &amp; Events</span></div><div><b>Mimi Stockton</b><span class="muted">Digital Marketing</span></div></div>
+      <p class="muted small" style="margin-top:12px">Plus our theater attendants, who run the booth and the popcorn.</p>
+    </div>
+    <div>
+      <div class="head-row"><h2>Board</h2></div>
+      <div class="people" style="grid-template-columns:1fr;border-top:0"><div><b>Alexander Roth</b><span class="muted">Chair</span></div><div><b>Sarah Nicholson</b><span class="muted">Vice Chair</span></div><div><b>Gary Boehm</b><span class="muted">Treasurer</span></div><div><b>Abby Zarkin</b><span class="muted">Secretary</span></div></div>
+      <p class="small" style="margin-top:12px">Members: Nicole Eure, Jake Finklestein, Madison Garcia, Linda Luftig, Andrea Richards, David Rousso, Lisa Ruckdeschel, and Anna Thorp.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div><h2>Be part of the next chapter</h2><p>Join as a member, or bring your group for a private screening.</p></div>
+    <div class="actions"><a class="btn btn-primary" href="support.html">See memberships</a><a class="btn btn-plain" href="#">Rent a theater</a></div>
   </div>
 </section>
 
 </main>
-<footer id="visit">
-  <div class="wrap grid g4">
+<footer>
+  <div class="wrap">
     <div>
       <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
       <p style="margin:0">Orange County&rsquo;s nonprofit arthouse cinema.</p>
     </div>
-    <div><h4>Visit</h4><p style="margin:0 0 6px">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p><a href="tel:+19199298428">Call 919-929-8428</a><a href="#">Get directions</a><p style="margin:8px 0 0">Tue&ndash;Sun: opens 30 min before the first show<br>Mon: closed unless advertised</p></div>
-    <div><h4>Explore</h4><a href="index.html#showtimes">Showtimes &amp; tickets</a><a href="index.html#events">Special programs</a><a href="support.html#join">Membership</a><a href="support.html#give">Donate</a><a href="#">Gift cards</a></div>
-    <div><h4>Stay in the loop</h4><label for="email">Get our weekly film newsletter.</label><input id="email" type="email" placeholder="Your email address" autocomplete="email"><a class="btn btn-primary" href="#">Sign up</a></div>
+    <div>
+      <h4>Visit</h4>
+      <p style="margin:0 0 6px">1129 Weaver Dairy Rd, Suite AB<br>Chapel Hill, NC 27514</p>
+      <a href="tel:+19199298428">(919) 929-8428</a>
+      <a href="mailto:info@thechelseatheater.org">info@thechelseatheater.org</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p style="margin:0">Tue&ndash;Sun: doors open 30 minutes before the first show<br>Mon: closed unless advertised</p>
+    </div>
+    <div>
+      <h4>The weekly program</h4>
+      <label for="email">Showtimes and special events in your inbox every week.</label>
+      <input id="email" type="email" placeholder="Email address" autocomplete="email">
+      <a class="btn btn-primary" href="#">Sign up</a>
+    </div>
   </div>
-  <div class="wrap fine">&copy; 2026 The Chelsea Art Theater, Inc., a 501(c)(3) nonprofit. <a href="story.html">About</a> <a href="#">Rentals</a> <a href="#">Press</a> <a href="#">Accessibility</a> <a href="#">Instagram</a> <a href="#">Facebook</a></div>
+  <div class="wrap fine">&copy; 2026 The Chelsea Art Theater, Inc., a 501(c)(3) nonprofit. <a href="#">Rentals</a><a href="#">Press</a><a href="#">Jobs</a><a href="#">Gift cards</a><a href="#">Instagram</a><a href="#">Facebook</a></div>
 </footer>
 </body>
 </html>
