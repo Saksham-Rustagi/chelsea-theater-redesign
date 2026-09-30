@@ -1,0 +1,106 @@
+/* Chelsea Theater redesign mockup: one shared stylesheet, no frameworks.
+   Palette: off-white, near-black, Chelsea orange (buttons only), marquee yellow accent.
+   Every text/background pair meets WCAG AA (4.5:1). */
+:root {
+  --bg: #FAF7F2;
+  --ink: #1C1917;
+  --muted: #57534E;
+  --orange: #F5931E;
+  --yellow: #F9D649;
+  --card: #FFFFFF;
+  --line: #E7E2DA;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 "Inter", system-ui, sans-serif; }
+h1, h2, h3 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; line-height: 1.2; margin: 0 0 .5em; }
+h1 { font-size: 2.6rem; } h2 { font-size: 2rem; } h3 { font-size: 1.35rem; }
+a { color: var(--ink); }
+img { max-width: 100%; display: block; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+section { padding: 56px 0; }
+.skip { position: absolute; left: -999px; } .skip:focus { left: 12px; top: 12px; background: var(--yellow); padding: 8px; z-index: 9; }
+.mock-note { background: var(--yellow); text-align: center; font-size: .85rem; padding: 6px; }
+
+/* Header */
+header { background: var(--ink); }
+header .wrap { display: flex; align-items: center; gap: 28px; min-height: 84px; flex-wrap: wrap; }
+header .logo img { height: 56px; width: auto; }
+nav { display: flex; gap: 22px; flex-wrap: wrap; margin-left: auto; align-items: center; }
+nav a { color: #fff; text-decoration: none; font-weight: 600; }
+nav a:hover, nav a:focus, nav a[aria-current] { text-decoration: underline; text-underline-offset: 6px; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 700; text-decoration: none; min-height: 44px; }
+.btn-primary { background: var(--orange); color: var(--ink); }
+.btn-outline { border: 2px solid var(--ink); color: var(--ink); }
+.btn-light { border: 2px solid #fff; color: #fff; }
+
+/* Cards and grids */
+.grid { display: grid; gap: 24px; }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.card img { border-radius: 10px; }
+.eyebrow { font-size: .85rem; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+.muted { color: var(--muted); }
+
+/* Home hero */
+.hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+.hero img { border-radius: 18px; }
+.identity { background: var(--ink); color: #fff; }
+.identity p { font-size: 1.25rem; margin: 0; }
+.identity strong { color: var(--yellow); }
+
+/* Path cards */
+.path { text-decoration: none; display: block; }
+.path h3 { margin-bottom: .2em; }
+.path:hover { border-color: var(--ink); }
+
+/* Showtimes */
+.film { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid var(--line); }
+.film img { border-radius: 8px; }
+.times { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 6px; }
+.time { border: 2px solid var(--ink); border-radius: 8px; padding: 8px 16px; font-weight: 700; text-decoration: none; min-height: 44px; }
+.access { font-size: .9rem; color: var(--muted); }
+.days { display: flex; gap: 10px; margin-bottom: 8px; }
+.days span { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: #fff; }
+.days .on { background: var(--ink); color: #fff; }
+
+/* Support band */
+.band { background: var(--ink); color: #fff; }
+.band a.btn-primary { color: var(--ink); }
+
+/* Support page */
+.stats { text-align: center; }
+.stats strong { display: block; font-family: "DM Serif Display", Georgia, serif; font-size: 2.6rem; font-weight: 400; }
+.tier ul { padding-left: 1.1em; margin: 8px 0 0; }
+.tier .price { font-size: 1.8rem; font-weight: 700; }
+.tier.popular { border: 3px solid var(--orange); position: relative; }
+.tag { position: absolute; top: -14px; left: 20px; background: var(--orange); color: var(--ink); padding: 2px 12px; border-radius: 999px; font-weight: 700; font-size: .85rem; }
+.amounts { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.amounts span { border: 2px solid var(--ink); border-radius: 8px; padding: 10px 18px; font-weight: 700; }
+.amounts .on { background: var(--ink); color: #fff; }
+.match { background: #FFF6D6; border-left: 6px solid var(--yellow); padding: 12px 16px; border-radius: 8px; }
+
+/* Story page */
+.timeline { border-left: 3px solid var(--orange); padding-left: 24px; }
+.timeline div { margin-bottom: 18px; }
+.team .avatar { width: 96px; height: 96px; border-radius: 50%; background: var(--line); display: grid; place-items: center; font-weight: 700; font-size: 1.4rem; margin-bottom: 10px; }
+.board { columns: 2; }
+
+/* Footer */
+footer { background: var(--ink); color: #E7E5E4; padding: 48px 0 24px; font-size: .95rem; }
+footer h4 { color: #fff; margin: 0 0 8px; }
+footer a { color: #E7E5E4; text-decoration: none; display: block; margin: 4px 0; }
+footer a:hover { text-decoration: underline; }
+footer input { padding: 10px; border-radius: 8px; border: 0; width: 100%; margin: 6px 0; }
+footer .fine { border-top: 1px solid #44403C; margin-top: 28px; padding-top: 16px; }
+
+@media (max-width: 760px) {
+  h1 { font-size: 2rem; }
+  .hero { grid-template-columns: 1fr; }
+  .film { grid-template-columns: 80px 1fr; }
+  nav { margin-left: 0; gap: 14px; }
+  .board { columns: 1; }
+}
