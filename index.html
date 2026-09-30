@@ -7,8 +7,8 @@
 <meta name="description" content="Student redesign mockup of the Chelsea Theater website, Chapel Hill's nonprofit arthouse cinema.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -16,7 +16,8 @@
 <header>
   <div class="wrap">
     <a class="logo" href="index.html"><img src="images/logo.png" alt="The Chelsea Theater, home"></a>
-    <nav aria-label="Main"><a href="index.html" aria-current="page">Films</a><a href="visit.html">Visit</a><a href="support.html">Support</a><a href="story.html">About</a></nav>
+    <nav aria-label="Main"><a href="index.html" aria-current="page">Films</a><a href="visit.html">Visit</a><a href="story.html">About</a></nav>
+    <a class="btn btn-primary" href="support.html">Become a member</a>
   </div>
   <div class="marquee" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 </header>
@@ -26,91 +27,66 @@
   <div class="wrap">
     <img src="images/hachan-wide.jpg" alt="Rinko Kikuchi in Ha-Chan, Shake Your Booty!">
     <div>
-      <span class="tag">Now showing</span>
+      <div class="kicker">Now showing</div>
       <h1>Ha-Chan, Shake Your Booty!</h1>
-      <div class="facts">R &middot; 122 min &middot; Dir. Josef Kubota Wladyka</div>
-      <p>Haru and Luis love competing in Tokyo&rsquo;s ballroom dance scene. After tragedy strikes, friends coax Haru back to the studio, and sparks fly.</p>
+      <div class="facts">R &middot; 122 min &middot; Comedy/Drama</div>
+      <p>After tragedy pulls her off the dance floor, Haru is coaxed back to Tokyo&rsquo;s ballroom scene, and sparks fly.</p>
       <div class="actions"><a class="btn btn-primary" href="#showtimes">Showtimes</a><a class="btn btn-plain" href="#">Trailer</a></div>
     </div>
   </div>
 </section>
 
-<section class="intro">
-  <div class="wrap">
-    <p class="statement">The Chelsea is Orange County&rsquo;s only nonprofit arthouse cinema: three screens in Timberlyne Village showing independent, international, and classic films you won&rsquo;t find at the multiplex.</p>
-    <ul class="shortcuts">
-      <li><a href="#showtimes">Today&rsquo;s showtimes <span aria-hidden="true">&rarr;</span></a></li>
-      <li><a href="visit.html">Hours, parking &amp; access <span aria-hidden="true">&rarr;</span></a></li>
-      <li><a href="support.html">Become a member <span aria-hidden="true">&rarr;</span></a></li>
-    </ul>
-  </div>
+<section>
+  <div class="wrap"><p class="statement"><strong>Orange County&rsquo;s only nonprofit arthouse cinema.</strong> Independent, international, and classic film on three screens in Chapel Hill.</p></div>
 </section>
 
-<section id="showtimes" style="padding-top:0">
+<section id="showtimes" class="flush">
   <div class="wrap">
-    <div class="head-row">
-      <h2>Today at the Chelsea</h2>
-      <div class="days"><span class="on">Today</span><span>Tomorrow</span><span>This week</span></div>
-    </div>
+    <div class="head-row"><h2>Today</h2><a href="#">Full schedule</a></div>
     
     <article class="film">
       <img src="images/hachan.jpg" alt="Poster for Ha-Chan, Shake Your Booty!">
-      <div><h3>Ha-Chan, Shake Your Booty!</h3><div class="facts">R &middot; 122 min &middot; Comedy/Drama</div><p>A grieving dancer returns to Tokyo&rsquo;s ballroom floor.</p></div>
+      <div><h3>Ha-Chan, Shake Your Booty!</h3><div class="facts">R &middot; 122 min</div></div>
       <div class="times"><a class="time" href="#">1:00<small>Open captions</small></a><a class="time" href="#">5:00</a><a class="time" href="#">7:00</a></div>
     </article>
     
     <article class="film">
       <img src="images/primetime.jpg" alt="Poster for Primetime">
-      <div><h3>Primetime</h3><div class="facts">R &middot; 110 min &middot; Drama</div><p>Robert Pattinson plays <em>To Catch a Predator</em> host Chris Hansen in 2006.</p></div>
+      <div><h3>Primetime</h3><div class="facts">R &middot; 110 min</div></div>
       <div class="times"><a class="time" href="#">1:30</a><a class="time" href="#">4:30</a><a class="time" href="#">7:30</a></div>
     </article>
     
     <article class="film">
       <img src="images/yhtbt.jpg" alt="Poster for You Had to Be There">
-      <div><h3>You Had to Be There</h3><div class="facts">Not rated &middot; 98 min &middot; Documentary</div><p>How a 1972 Toronto <em>Godspell</em> launched Martin Short, Gilda Radner, and Eugene Levy.</p></div>
+      <div><h3>You Had to Be There</h3><div class="facts">Not rated &middot; 98 min</div></div>
       <div class="times"><a class="time" href="#">2:00<small>Open captions</small></a><a class="time" href="#">8:00</a></div>
     </article>
     
     <article class="film">
       <img src="images/weight.jpg" alt="Poster for The Weight">
-      <div><h3>The Weight</h3><div class="facts">R &middot; 115 min &middot; Adventure/Crime</div><p>Ethan Hawke and Russell Crowe in a dangerous gold-smuggling escape.</p></div>
+      <div><h3>The Weight</h3><div class="facts">R &middot; 115 min</div></div>
       <div class="times"><a class="time" href="#">4:00</a></div>
     </article>
-    <p class="key"><strong>Captions and audio:</strong> &ldquo;Open captions&rdquo; means captions appear on screen for everyone. Closed-caption devices and audio-description headsets are available for most shows; ask at the concession stand. <a href="visit.html#access">More on accessibility</a></p>
+    <p class="key">Open captions appear on screen for everyone. Caption devices and audio-description headsets are available for most shows. <a href="visit.html#access">Accessibility</a></p>
   </div>
 </section>
 
-<section style="padding-top:0">
+<section class="flush">
   <div class="wrap">
     <div class="head-row"><h2>Coming up</h2><a href="#">All special programs</a></div>
     
-    <article class="event">
-      <div class="date">Oct 11<span>Festival opens</span></div>
-      <div><h3>Jewish Film Festival 2026</h3><p>Six award-winning, first-run films from around the world. Some screenings are already sold out.</p><a href="#">See the lineup</a></div>
-      <img src="images/jff.jpg" alt="Jewish Film Festival 2026 banner">
-    </article>
+    <article class="event"><div class="date">Oct 11</div><div><h3>Jewish Film Festival 2026</h3><p>Six award-winning first-run films.</p></div><a href="#">Lineup</a></article>
     
-    <article class="event">
-      <div class="date">Oct 15<span>Thu &ndash; one week</span></div>
-      <div><h3>The Devils: Director&rsquo;s Cut</h3><p>Ken Russell&rsquo;s 1971 film with Vanessa Redgrave and Oliver Reed, restored. Rated NC-17.</p><a href="#">Showtimes</a></div>
-      <img src="images/devils.jpg" alt="The Devils: Director's Cut">
-    </article>
+    <article class="event"><div class="date">Oct 15</div><div><h3>The Devils: Director&rsquo;s Cut</h3><p>Ken Russell&rsquo;s 1971 film, restored. One week only.</p></div><a href="#">Tickets</a></article>
     
-    <article class="event">
-      <div class="date">Oct 31<span>Sat, 9:30 PM</span></div>
-      <div><h3>Halloween PJ Party</h3><p><em>The Craft</em> + <em>The Crow</em>, with an intermission. Pajamas encouraged.</p><a href="#">Showtimes</a></div>
-      <img src="images/pjparty.jpg" alt="PJ Party poster for The Craft and The Crow">
-    </article>
+    <article class="event"><div class="date">Oct 31</div><div><h3>Halloween PJ Party</h3><p><em>The Craft</em> + <em>The Crow</em> double feature.</p></div><a href="#">Tickets</a></article>
   </div>
 </section>
 
 <section class="band">
   <div class="wrap">
-    <div>
-      <h2>Tickets pay for part of it. Members pay for the rest.</h2>
-      <p>Memberships start at $50 a year and come with cheaper tickets and free popcorn.</p>
-    </div>
-    <div class="actions"><a class="btn btn-primary" href="support.html">See memberships</a></div>
+    <div><h2>Tickets cover part of it. Members cover the rest.</h2><p>Memberships start at $50 a year, with cheaper tickets and free popcorn.</p></div>
+    <a class="btn btn-plain" href="support.html">See memberships</a>
   </div>
 </section>
 
